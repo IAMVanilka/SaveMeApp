@@ -1,21 +1,20 @@
+import logging
 import time
 
-from win10toast import ToastNotifier
+from plyer import notification
+from scripts import config_manager, actions, logger_config
+from colorama import Fore, Style
 
-from scripts import config_manager, actions
-
-from colorama import init, Fore, Style
-from termcolor import colored
+logger_config.setup_logging()
+logger = logging.getLogger(__name__)
 
 
-def notification(title, message, duration=10):
-    toaster = ToastNotifier()
-    toaster.show_toast(
-        title,
-        message,
-        duration=duration
+def run_notification(title, message, duration=4):
+    notification.notify(
+        title=title,
+        message=message,
+        timeout=duration
     )
-
 
 def display_menu():
     # Верхняя граница

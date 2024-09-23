@@ -1,9 +1,6 @@
 import threading
 import time
-
-from colorama import Fore, Style
 from googleapiclient.discovery import build
-
 
 from scripts import auth, process_manager, console_UI, config_manager, upload_download_data
 
@@ -18,8 +15,6 @@ if __name__ == "__main__":
     if autosave == "on":
         autosave_thread = threading.Thread(target=process_manager.auto_send_saves, args=(drive,), daemon=True)
         autosave_thread.start()
-
-    print("| " + Fore.GREEN + "Запущен процесс отслеживания игр..." + Style.RESET_ALL + Fore.CYAN + " |")
     time.sleep(1)
 
     menu = console_UI.MainMenu()

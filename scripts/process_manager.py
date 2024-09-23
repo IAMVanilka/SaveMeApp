@@ -2,7 +2,7 @@ import configparser
 import logging
 import time
 import psutil
-
+from colorama import Fore, Style
 from scripts import config_manager, upload_download_data, logger_config, console_UI
 
 logger_config.setup_logging()
@@ -11,10 +11,10 @@ logger = logging.getLogger(__name__)
 
 def check_if_process_running(process_name):
     # Проходим по всем запущенным процессам
-    for proc in psutil.process_iter(['name']):
+    for proc in psutil.process_iter():
         try:
-            # Сравниваем имя процесса
-            if process_name.lower() in proc.info['name'].lower():
+            # Получаем имя процесса через атрибут .name()
+            if process_name.lower() in proc.name().lower():
                 return True
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             pass
@@ -35,6 +35,7 @@ def auto_send_saves(drive):
             exe_list.append(exe)
 
     def send_saves(drive):
+        print("| " + Fore.GREEN + "Запущен процесс отслеживания игр..." + Style.RESET_ALL + Fore.CYAN + " |")
         if not exe_list:
             logger.info("Нет игр для отслеживания.")
             return
@@ -56,18 +57,18 @@ def auto_send_saves(drive):
                         for section in config.sections():
                             if config[section].get('exe') == exe_file:
                                 game_info = config_manager.get_game_info(section)
-                                console_UI.notification('Загрузка', "Началась загрузка сохранений в облако...")
+                                console_UI.run_notification('Загрузка', "Началась загрузка сохранений в облако...")
 
                                 up_res = upload_download_data.upload(section, game_info[0], drive)
 
                                 if up_res == False:
                                     logger.error("ОШИБКА! Сохранения не загружены в облако или загружены с ошибкой!")
-                                    console_UI.notification("ОШИБКА!", "Сохранения не загружены в облако или "
+                                    console_UI.run_notification("ОШИБКА!", "Сохранения не загружены в облако или "
                                                                        "загружены с ошибкой!")
 
                                 else:
                                     logger.info("Сохранения загружены в облако.")
-                                    console_UI.notification("Успех!", "Сохранения успешно загружены!")
+                                    console_UI.run_notification("Успех!", "Сохранения успешно загружены!")
 
                                 break
 
