@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 IAMVanilka
+
 import os
 import logging
 import sys

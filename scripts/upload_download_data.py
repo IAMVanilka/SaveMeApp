@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 IAMVanilka
+
 from colorama import Fore, Style, init
 from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
 from googleapiclient.errors import HttpError
