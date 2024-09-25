@@ -265,13 +265,15 @@ def open_settings():
     auto_deleting_setting = SettingsSection(config, "Settings", "saves_deleting", "Автоудаление сохранений")
     auto_send_saves_setting = SettingsSection(config, "Settings", "autosave", "Автосохранение в облако")
     max_saves_setting = SettingsSection(config, "Settings", "max_saves", "Количество хранимых сохранений в облаке")
+    logs_setting = SettingsSection(config, "Settings", "console_log", "Отображать логи в консоль")
 
     settings_menu = Menu(
         title='НАСТРОЙКИ',
         menu_items={
             '1': (auto_send_saves_setting.display_setting, auto_send_saves_setting.toggle_setting_status),
             '2': (auto_deleting_setting.display_setting, auto_deleting_setting.toggle_setting_status),
-            '3': (max_saves_setting.display_setting, max_saves_setting.waiting_for_input)
+            '3': (max_saves_setting.display_setting, max_saves_setting.waiting_for_input),
+            '4': (logs_setting.display_setting, logs_setting.toggle_setting_status)
         }
     )
 

@@ -3,6 +3,7 @@
 
 import logging
 import time
+import webbrowser
 
 from plyer import notification
 from scripts import config_manager, actions, logger_config
@@ -20,12 +21,18 @@ def run_notification(title, message, duration=4):
     )
 
 def display_menu():
+    print(Fore.CYAN + Style.BRIGHT + "+" + "-" * 67 + "+")
+
+    print(Fore.LIGHTMAGENTA_EX + "|         Добро пожаловать в SaveMeApp by IAMVanilka!                 |\n"
+          "| Это приложение поможет вам управлять вашими сохранениями в облаке.  |\n"
+          "| Чтобы начать добавить игру для отслеживания, выберите 3.            |\n"
+          "| Чтобы узнать о приложении подробней выберите 5                      |")
+
     # Верхняя граница
-    print(Fore.CYAN + Style.BRIGHT + "+" + "-" * 35 + "+")
+    print(Fore.CYAN + Style.BRIGHT + "+" + "-" * 67 + "+")
 
     # Заголовок
-    print("|" + " " * 10 + Fore.YELLOW + "Главное меню" + " " * 10 + "|")
-
+    print(Fore.YELLOW + "|" + " " * 10 + Fore.YELLOW + "Главное меню" + " " * 10 +"  |")
     # Основной текст меню
     print(Fore.CYAN + "+" + "-" * 35 + "+")
     print(Fore.CYAN + "+" + "-" * 35 + "+")
@@ -33,6 +40,7 @@ def display_menu():
     print(Fore.YELLOW + "2." + Fore.RESET + " Загрузить сохранения в облако")
     print(Fore.YELLOW + "3." + Fore.RESET + " Список игр")
     print(Fore.YELLOW + "4." + Fore.RESET + " Настройки")
+    print(Fore.YELLOW + "5." + Fore.RESET + " О приложении")
     print(Fore.YELLOW + "0." + Fore.RESET + " Выход")
 
     # Нижняя граница
@@ -72,6 +80,8 @@ class MainMenu:
                 actions.show_list_of_games(self.drive)
             elif choice == "4":
                 actions.open_settings()
+            elif choice == "5":
+                webbrowser.open("https://github.com/IAMVanilka/SaveMeApp")
             elif choice == '0':
                 print(Fore.RED + "Выход из программы..." + Style.RESET_ALL)
                 time.sleep(1)

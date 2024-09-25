@@ -7,12 +7,14 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from scripts import upload_download_data
+from scripts import upload_download_data, config_manager
+
 
 def setup_logging():
+    config = config_manager.read_config(upload_download_data.resource_path('settings.ini'))
+
     # Путь к родительской директории
     script_dir = Path(sys.executable).resolve()  # Текущая директория скрипта
-    parent_dir = os.path.dirname(script_dir)  # Родительская директория
 
     # Создаёт папку logs в родительской директории
     log_dir = upload_download_data.resource_path('logs')
@@ -32,7 +34,10 @@ def setup_logging():
 
     # Уровни логирования
     file_handler.setLevel(logging.INFO)
-    console_handler.setLevel(logging.INFO)
+    if config.get('Settings', 'console_log') == 'on':
+        console_handler.setLevel(logging.INFO)
+    else:
+        console_handler.setLevel(logging.ERROR)
 
     # Форматирование сообщений
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
