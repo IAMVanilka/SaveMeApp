@@ -13,7 +13,7 @@ def google_auth():
     init()
 
     # Определите область доступа
-    SCOPES = ['https://www.googleapis.com/auth/drive']
+    SCOPES = ['https://www.googleapis.com/auth/drive.file']
 
     # Файл токенов
     creds_file = 'tokens/user_token.json'

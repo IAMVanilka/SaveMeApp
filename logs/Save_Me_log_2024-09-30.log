@@ -7,3 +7,32 @@
 2024-09-30 14:02:44,812 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
 2024-09-30 14:02:44,816 - scripts.process_manager - INFO - Нет игр для отслеживания.
 2024-09-30 14:03:14,817 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:29:09,242 - google_auth_oauthlib.flow - INFO - "GET /?error=access_denied&state=YUoN8waH4txtwQGHAFc4K4lSziUqLt HTTP/1.1" 200 65
+2024-09-30 15:34:49,305 - google_auth_oauthlib.flow - INFO - "GET /?state=dL42pKoA5OxRRmKLKHA9ePnvM0O007&code=4/0AQlEd8z-IHpTQC340-Jz9BQJhvya6Rg2Rd-d1wrVFCyl1uKOZVinVP2y9V8_TwHheuT1pw&scope=https://www.googleapis.com/auth/drive HTTP/1.1" 200 65
+2024-09-30 15:34:50,605 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 15:34:50,609 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:35:20,609 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:35:50,610 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:36:20,611 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:36:50,612 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:37:20,614 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:37:50,615 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:38:20,616 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:38:50,618 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:39:20,618 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:39:50,619 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:40:20,620 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:40:37,604 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 15:40:37,608 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 15:59:25,718 - google_auth_oauthlib.flow - INFO - "GET /?state=D76kYrdlPLNyYG6Th1VUACDhqzd9VT&code=4/0AVG7fiQjgnofXoYnGTMlXfI-MYNsEzZEkN-16iK70wCQa0aOWzxZIV8O-19vqR3cFTd1Ew&scope=https://www.googleapis.com/auth/drive.file HTTP/1.1" 200 65
+2024-09-30 15:59:26,697 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 15:59:26,700 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 16:03:25,758 - google_auth_oauthlib.flow - INFO - "GET /?state=5rQp7bku1s9ezFe87pPPutMXba5mLn&code=4/0AQlEd8zBNT3Jgs00wnp6U0mHg2bKsq_Hf7oRbJcJBzEPemAhLqLxK2u0LObhuQ2rEYeC7Q&scope=https://www.googleapis.com/auth/drive.file HTTP/1.1" 200 65
+2024-09-30 16:03:26,813 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 16:06:09,581 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 16:07:17,548 - google_auth_oauthlib.flow - INFO - "GET /?state=8iJ5DnJzkrn722jkwYFLqo0kGbxSbe&code=4/0AVG7fiSpLG4UA4IzUrEibkcHtj-YsKB9mPexhBSKB3WDT2M-66aAaApYFOoDsOtToEGlLw&scope=https://www.googleapis.com/auth/drive.file HTTP/1.1" 200 65
+2024-09-30 16:07:18,681 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 16:10:32,157 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 16:11:56,209 - google_auth_oauthlib.flow - INFO - "GET /?state=4XAGEcWPvyhzkIQEYVkTktDyI1Iqqp&code=4/0AVG7fiTjaDXM-tgR1LGlfMK9FtNm7gJNZCb5pkpw3ED-F6cN7UsTSfnHkzjFPTZS-pCTLw&scope=https://www.googleapis.com/auth/drive.file HTTP/1.1" 200 65
+2024-09-30 16:11:57,199 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 16:13:10,704 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
