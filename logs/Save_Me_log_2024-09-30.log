@@ -1,0 +1,9 @@
+2024-09-30 13:51:33,012 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 13:51:33,016 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 13:58:22,630 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 13:58:22,634 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 13:58:49,846 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 13:58:49,851 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 14:02:44,812 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-09-30 14:02:44,816 - scripts.process_manager - INFO - Нет игр для отслеживания.
+2024-09-30 14:03:14,817 - scripts.process_manager - INFO - Нет игр для отслеживания.

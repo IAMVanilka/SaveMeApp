@@ -58,7 +58,7 @@ class Menu:
 
         while True:
             self.display_menu()
-            user_input = input("Введите номер пункта меню: ")
+            user_input = input()
 
             if user_input in self.menu_items:
                 _, action = self.menu_items[user_input]

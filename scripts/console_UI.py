@@ -81,7 +81,10 @@ class MainMenu:
             elif choice == "4":
                 actions.open_settings()
             elif choice == "5":
-                webbrowser.open("https://github.com/IAMVanilka/SaveMeApp")
+                print(f"{Fore.CYAN}SaveMeApp by IAMVanilka{Style.RESET_ALL} {Fore.LIGHTGREEN_EX}v. 1.0.2.{Style.RESET_ALL}\n"
+                      f"{Fore.CYAN}Using MIT License Copyright (c) 2024 IAMVanilka{Style.RESET_ALL}\n"
+                      f"{Fore.CYAN}GitHub:{Style.RESET_ALL} {Fore.LIGHTYELLOW_EX}https://github.com/IAMVanilka/SaveMeApp{Style.RESET_ALL}")
+                input(Fore.CYAN + "Нажмите Enter для продолжения..." + Style.RESET_ALL)
             elif choice == '0':
                 print(Fore.RED + "Выход из программы..." + Style.RESET_ALL)
                 time.sleep(1)
